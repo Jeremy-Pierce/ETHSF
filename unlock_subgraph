@@ -1,0 +1,73 @@
+import logo from './logo.svg';
+import './App.css';
+import { createClient } from 'urql';
+import { useEffect, useState } from 'react';
+
+const APIURL = "https://api.thegraph.com/subgraphs/name/unlock-protocol/mumbai-v2"
+
+const query = `query Locks($owner: String!) {
+  lock(orderBy: createdAtBlock, orderDirection: desc, 
+  where:{
+    lockManagers_contains: 
+    [ $owner ]
+  })
+   {
+    id
+    address
+    name
+    lockManagers
+    price 
+    tokenAddress
+    expirationDuration    
+    version
+  }
+}
+}`;
+
+//Set the variable's value to the the user's address
+const variables = { owner: userAddress };
+
+const result = await fetch(
+  "https://api.thegraph.com/subgraphs/name/unlock-protocol/mumbai-v2",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      query,
+      variables,
+    }),
+  }
+).then((r) => r.json());
+
+const client = createClient({
+  url: APIURL,
+})
+
+function App() {
+  const [tokens, setTokens] = useState([]);
+  useEffect(() => {
+    fetchData()
+  }, [])
+  async function fetchData() {
+    const response = await client.query(query).toPromise();
+    console.log('response:', response);
+    setTokens(response.data.tokens);
+  }
+  return (
+    <div className="App">
+      {
+        tokens.map((token, index) => {
+          <div key={index}>
+            <a href={token.contentURI} target="_blank">Content</a>
+            <a href={token.metadataURI} target="_blank">Metadata</a>
+          </div>
+        })
+      }
+    </div>
+  );
+}
+
+export default App;
