@@ -25,7 +25,8 @@ Our unique voting helps users find relevant content while rewarding contributors
 # NFT privledges 
 Users will be able to join communities/groups they are interested in (Web3, Math, Videogames, etc.) and upon completing courses users will be rewarded with NFT certificates that allow the user to participate in community voting and additional features. These NFT certificates are more than just proof of completion, by using Unlock protocol we are able to use NFT's to gain access to select communities, unlock subscription content, and much more.
 
-# Users will be able to track what they've learned and display NFT badges/certificates that they can use to vote and gain access to locked content.
+# Profile
+Users will be able to track what they've learned and display NFT badges/certificates that they can use to vote and gain access to locked content.
 ![profile](https://user-images.githubusercontent.com/98198920/200185249-9c1775c7-6403-4109-93f6-785852fa1c6e.png)
 
 # Installation
