@@ -1,6 +1,9 @@
 ![logo](https://user-images.githubusercontent.com/98198920/200185009-9670e8b9-e42e-4fed-8004-83ebf33c1efc.png)
 # Acely
 Acely is a Education & Community platform that rewards its users for their positive contribution to the platform. Its unique voting structure and Tokenomics paired with existing blockchains differentiate Acely from any other platform. Users can vote/rate content and choose how many tokens they want to stake; based on how beneficial others found their contribution they receive a portion back through staked rewards.
+# Figma Markup
+https://www.figma.com/proto/V7kNrxFwML4CO0KoKAkWCQ/ETHsf?page-id=61%3A10766&node-id=99%3A7923&viewport=674%2C309%2C0.05&scaling=scale-down-width&starting-point-node-id=73%3A10127
+
 # Search courses
 ![videoscreenshot](https://user-images.githubusercontent.com/98198920/200185104-42af5335-9184-4add-b79e-de6c707271a5.png)
 
