@@ -41,7 +41,7 @@ Users will be able to track what they've learned and display NFT badges/certific
 # Installation
 
 # Contributors
-Muath Juady, Development
-Jeremy Pierce, Product Manager
-Michelle Wern, UX/UI Designer
-Sebastian Bellanger, Backened Designer
+Muath Juady Development |
+Jeremy Pierce Product Manager |
+Michelle Wern UX/UI Designer |
+Sebastian Bellanger Backened Designer
